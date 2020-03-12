@@ -7,9 +7,16 @@ function WhatCanIDrink( age ) {
 //     this.value = 0;
 // };
 
-WhatCanIDrink.prototype.checkAge = function(age) {
-    if ( typeof(age) == "number" ) {
-        this.age = age;
+WhatCanIDrink.prototype.checkAge = function(number) {
+    if ( typeof(number) == "number" ) {
+        if (number < 1) {
+            let result = "Sorry. That's not an age!";
+            return result; 
+        }
+        else {
+            let result = number;
+            return result;
+        }
     }
     else {
         alert( "Error!" );
