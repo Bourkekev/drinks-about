@@ -13,6 +13,18 @@ WhatCanIDrink.prototype.checkAge = function(number) {
             let result = "Sorry. That's not an age!";
             return result; 
         }
+        else if (number < 14) {
+            let result = "Drink Toddy.";
+            return result; 
+        }
+        else if (number < 18 && number > 13 ) {
+            let result = "Drink Coke.";
+            return result; 
+        }
+        else if (number < 21 && number > 17) {
+            let result = "Drink Beer.";
+            return result; 
+        }
         else {
             let result = number;
             return result;
