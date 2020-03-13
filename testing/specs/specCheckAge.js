@@ -4,10 +4,6 @@ describe("WhatCanIDrink", function() {
     })
 
     describe("Check Age", function() {
-        it("should return 20", function() {
-            let result = drinkAge.checkAge(20)
-            expect(result).toBe(20);
-        })
         
         it("should return Sorry. That's not an age!", function() {
             let result = drinkAge.checkAge(0)
@@ -21,9 +17,9 @@ describe("WhatCanIDrink", function() {
             let result = drinkAge.checkAge(17)
             expect(result).toBe("Drink Coke.");
         })
-        it("should return Drink Coke.", function() {
+        it("should return Drink Beer.", function() {
             let result = drinkAge.checkAge(20)
-            expect(result).toBe("Drink Coke.");
+            expect(result).toBe("Drink Beer.");
         })
 
         it("should return an error if a number is not supplied", function() {

@@ -17,11 +17,15 @@ WhatCanIDrink.prototype.checkAge = function(number) {
             let result = "Drink Toddy.";
             return result; 
         }
-        else if (number < 18 && number > 13 ) {
+        else if (number > 13 && number < 18  ) {
             let result = "Drink Coke.";
             return result; 
         }
-        else if (number < 21 && number > 17) {
+        else if (number > 17 &&  number < 21) {
+            let result = "Drink Beer.";
+            return result; 
+        }
+        else if (number > 20 &&  number < 130) {
             let result = "Drink Beer.";
             return result; 
         }
