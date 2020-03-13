@@ -21,6 +21,10 @@ describe("WhatCanIDrink", function() {
             let result = drinkAge.checkAge(20)
             expect(result).toBe("Drink Beer.");
         })
+        it("should return Drink Whiskey.", function() {
+            let result = drinkAge.checkAge(120)
+            expect(result).toBe("Drink Whiskey.");
+        })
 
         it("should return an error if a number is not supplied", function() {
             spyOn(window, "alert");

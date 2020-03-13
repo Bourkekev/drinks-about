@@ -26,7 +26,7 @@ WhatCanIDrink.prototype.checkAge = function(number) {
             return result; 
         }
         else if (number > 20 &&  number < 130) {
-            let result = "Drink Beer.";
+            let result = "Drink Whiskey.";
             return result; 
         }
         else {
